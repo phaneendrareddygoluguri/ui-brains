@@ -37,10 +37,12 @@ import { MatTreeModule } from '@angular/material/tree';
 
 import { HomeComponent } from './components/home/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar/navbar.component';
+import { RegisterComponent } from './components/register/register/register.component';
+import { LoginComponent } from './components/login/login/login.component';
 
 
 @NgModule({
-  declarations: [HomeComponent, NavbarComponent],
+  declarations: [HomeComponent, NavbarComponent, RegisterComponent, LoginComponent],
   imports: [
     CommonModule,
     MatAutocompleteModule,
