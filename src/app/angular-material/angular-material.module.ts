@@ -36,10 +36,11 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
 
 import { HomeComponent } from './components/home/home/home.component';
+import { NavbarComponent } from './components/navbar/navbar/navbar.component';
 
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, NavbarComponent],
   imports: [
     CommonModule,
     MatAutocompleteModule,
