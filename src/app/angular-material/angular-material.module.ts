@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
@@ -39,12 +40,30 @@ import { HomeComponent } from './components/home/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar/navbar.component';
 import { RegisterComponent } from './components/register/register/register.component';
 import { LoginComponent } from './components/login/login/login.component';
+import { AppRoutingModule } from '../app-routing.module';
+import { UserDetailsComponent } from './components/admin/user-details/user-details/user-details.component';
+import { CoursesComponent } from './components/courses/courses/courses.component';
+import { PlacementsComponent } from './components/placements/placements/placements.component';
+import { AboutComponent } from './components/about/about/about.component';
+
 
 
 @NgModule({
-  declarations: [HomeComponent, NavbarComponent, RegisterComponent, LoginComponent],
+  declarations: [
+    HomeComponent,
+     NavbarComponent,
+     RegisterComponent,
+     LoginComponent,
+     UserDetailsComponent,
+     CoursesComponent,
+     PlacementsComponent,
+     AboutComponent
+    ],
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AppRoutingModule,
     MatAutocompleteModule,
     MatBadgeModule,
     MatBottomSheetModule,
