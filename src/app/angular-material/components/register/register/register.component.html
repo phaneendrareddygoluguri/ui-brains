@@ -4,10 +4,66 @@
       <h2><b><strong>Registration Form</strong></b></h2>
     </mat-card-header>
     <mat-card-content>
+      <div>
+        <form action="" [formGroup]="registerForm">
+          <label for="">
+            <strong>
+              <b>Name</b>
+            </strong>
+          </label>
+          <input type="text">
+          <label for="">
+            <strong>
+              <b>Username</b>
+            </strong>
+          </label>
+          <input type="text">
+          <label for="">
+            <strong>
+              <b>E-mail</b>
+            </strong>
+          </label>
+          <input type="email">
+          <label for="">
+            <strong>
+              <b>Password</b>
+            </strong>
+          </label>
+          <input type="password">
+          <label for="">
+            <strong>
+              <b>Confirm Password</b>
+            </strong>
+          </label>
+          <input type="password">
+          <label for="">
+            <strong>
+              <b>Gender</b>
+            </strong>
+          </label>
+          <select name="" id="">
+            <option value=""></option>
+            <option value="" *ngFor="let gender of genders">{{gender.gender | titlecase}}</option>
+          </select>
+          <label for="">
+            <strong>
+              <b>Mobile Number</b>
+            </strong>
+          </label>
+          <input type="text">
+          <label for="">
+            <strong>
+              <b>Role</b>
+            </strong>
+          </label>
+          <select name="" id="">
+            <option value=""></option>
+            <option value="" *ngFor="let role of roles">{{role.role | titlecase}}</option>
+          </select>
+          <button mat-raised-button color="accent" (click)="onRegister()"><strong>Register</strong></button>
+        </form>
+      </div>
     </mat-card-content>
-    <mat-card-actions>
-      <button mat-raised-button color="accent"><strong>Register</strong></button>
-    </mat-card-actions>
     <span>Arleady a user..!!
         <button mat-button color="primary" (click)="signIn()">sign in</button>
     </span>

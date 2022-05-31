@@ -1,14 +1,56 @@
-<mat-card class="example-card">
+<div id="bg-image">
+  <div>
+  <mat-card class="example-card">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
       <h2><b><strong>Login Form</strong></b></h2>
     </mat-card-header>
     <mat-card-content>
+      <div>
+        <form action="" [formGroup]="loginForm">
+          <label for="">
+            <b>
+              <strong>Username</strong>
+            </b>
+          </label>
+          <input type="text" placeholder="enter your registered username" formControlName="username" [ngClass]="{ 'is-invalid': isSubmitted && formControls['username'].errors }">
+          <div class="error-text" *ngIf="formControls['username'].touched && formControls['username'].errors && formControls['username'].errors['required']">
+            username is required
+          </div>
+          <label for="">
+            <b>
+              <strong>Password</strong>
+            </b>
+          </label>
+          <input type="password" placeholder="enter your password" formControlName="password">
+          <div class="error-text" *ngIf="formControls['password'].touched && formControls['password'].errors && formControls['password'].errors['required']">
+            password is required
+          </div>
+          <label for="">
+            <b>
+              <strong>Role</strong>
+            </b>
+          </label>
+          <select name="" id="" >
+            <option value="" formControlName="role"></option>
+            <option value="" *ngFor="let role of roles" value="{{role.role}}">{{role.role}}</option>
+          </select>
+          <div class="error-text" *ngIf="formControls['role'].touched && formControls['role'].errors && formControls['role'].errors['required']">
+            role is required
+          </div>
+        </form>
+      </div>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="accent"><strong>Sign in</strong></button>
+      <button mat-raised-button color="accent" (click)="onSubmit()"><strong>Sign in</strong></button>
     </mat-card-actions>
     <span>didn't had a account?
-        <button mat-button color="primary" (click)="register()">Create One</button>
+        <button mat-button color="primary" (click)="register()">
+          <b>
+            <strong>Create One</strong>
+          </b>
+        </button>
     </span>
   </mat-card>
+</div>
+</div>
