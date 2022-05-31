@@ -7,7 +7,19 @@
   }
   
   .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-image: url('../../../../../assets/images/WhatsApp\ Image\ 2022-05-27\ at\ 5.43.07\ PM.jpeg');
     background-size: cover;
+  }
+  label
+  {
+   display: block;
+  }
+  input,select
+  {
+    width: 100%;
+  }
+  button
+  {
+    margin-top: 1rem;
   }
   

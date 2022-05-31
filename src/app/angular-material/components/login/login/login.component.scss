@@ -1,13 +1,36 @@
+#bg-image
+{
+  height: 100%;
+  width: 100%;
+}
 .example-card {
     max-width: 400px;
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
+    background-image: url(../../../../../assets/images/internet-security-closed-pad-lock-260nw-515395867.webp);
+    background-size:cover;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
   
   .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-image: url('../../../../../assets/images/WhatsApp\ Image\ 2022-05-27\ at\ 5.43.07\ PM.jpeg');
     background-size: cover;
   }
-  
+  label,h2,span{
+    display: block;
+    color: #fff;
+  }
+  input, select
+  {
+    width: 100%;
+    margin-top: 0.2rem;
+    caret-color: rgb(251, 34, 6);
+    background: transparent;
+    border-style:ridge;
+  }
+  .error-text
+  {
+    color:#ff0000
+  }
+ 
