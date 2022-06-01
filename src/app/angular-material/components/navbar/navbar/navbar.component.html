@@ -1,7 +1,7 @@
 <mat-toolbar>
   <img src="../../../../../assets/images/WhatsApp_Image_2022-05-27_at_5.43.07_PM-removebg-preview.png" alt="">
   <div *ngFor="let tab of tabs,let i=index">
-      <div routerLink="{{tab.name}}" (click)="onTabClick(tab)">{{tab.name | titlecase}}</div>
+      <div routerLink="{{tab.name}}">{{tab.name | titlecase}}</div>
   </div>        
 </mat-toolbar>
   
