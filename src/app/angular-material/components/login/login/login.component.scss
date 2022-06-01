@@ -1,15 +1,14 @@
 #bg-image
 {
-  height: 100%;
-  width: 100%;
+  background-image: url(../../../../../assets/images/cool-background.png);
+  background-size: cover;
+  height: 89%;
 }
 .example-card {
     max-width: 400px;
-    margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(../../../../../assets/images/internet-security-closed-pad-lock-260nw-515395867.webp);
-    background-size:cover;
+    background: transparent;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
   
@@ -19,7 +18,7 @@
   }
   label,h2,span{
     display: block;
-    color: #fff;
+    color: #000;
   }
   input, select
   {
@@ -32,5 +31,9 @@
   .error-text
   {
     color:#ff0000
+  }
+  .signIn
+  {
+    width: 100%;
   }
  

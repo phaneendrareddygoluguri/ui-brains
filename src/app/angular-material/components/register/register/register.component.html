@@ -1,3 +1,5 @@
+<div class="bg-image">
+  <br><br>
 <mat-card class="example-card">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
@@ -60,7 +62,7 @@
             <option value=""></option>
             <option value="" *ngFor="let role of roles">{{role.role | titlecase}}</option>
           </select>
-          <button mat-raised-button color="accent" (click)="onRegister()"><strong>Register</strong></button>
+          <button mat-stroked-button (click)="onRegister()" class="register"><strong>Register</strong></button>
         </form>
       </div>
     </mat-card-content>
@@ -68,4 +70,4 @@
         <button mat-button color="primary" (click)="signIn()">sign in</button>
     </span>
   </mat-card>
-  
+</div>

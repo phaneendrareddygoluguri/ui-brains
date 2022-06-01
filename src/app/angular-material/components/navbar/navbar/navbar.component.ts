@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { tabs } from './headertabs';
 
 @Component({
@@ -8,12 +9,12 @@ import { tabs } from './headertabs';
 })
 export class NavbarComponent implements OnInit {
 tabs:any[]=tabs
-  constructor() { }
+  constructor
+  (
+        private router_:Router
+  ) 
+  { }
 
   ngOnInit(): void {
-  }
-  onTabClick(tab:string)
-  {
-
   }
 }
